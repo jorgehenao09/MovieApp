@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="@style/AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MovieTitleLabel" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/label_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="MovieInputLabel" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MovieTextReadOnly" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:paddingLeft">2dp</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="button">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="MovieAlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/button</item>
+    </style>
+
+    <dimen name="label_title">20sp</dimen>
+    <dimen name="label_font_size">15sp</dimen>
+</resources>

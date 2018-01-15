@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_popular"
+            android:icon="@drawable/ic_popular"
+            android:title="@string/popular"/>
+        <item
+            android:id="@+id/nav_top_rated"
+            android:icon="@drawable/ic_top_rated"
+            android:title="@string/top_rated"/>
+        <item
+            android:id="@+id/nav_uncoming"
+            android:icon="@drawable/ic_uncoming"
+            android:title="@string/uncoming"/>
+    </group>
+
+    <item android:title="@string/app">
+        <menu>
+            <item
+                android:id="@+id/nav_close_app"
+                android:icon="@drawable/ic_close_app"
+                android:title="@string/close_app"/>
+        </menu>
+    </item>
+
+</menu>

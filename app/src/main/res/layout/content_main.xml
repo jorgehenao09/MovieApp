@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:scrollbars="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.smarthec.movieapp.activities.mainActivity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/MovieInputLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/popular"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_recycler_popular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/main_progress_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/main_popular_content_empty_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/empty_data"
+                android:contentDescription="@string/contentD_empty"/>
+
+            <TextView
+                style="@style/MovieTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_no_moview"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/MovieInputLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/top_rated"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_recycler_top_rated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/main_progress_top_rated"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/main_top_rated_content_empty_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/empty_data"
+                android:contentDescription="@string/contentD_empty"/>
+
+            <TextView
+                style="@style/MovieTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_no_moview"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/MovieInputLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/uncoming"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_recycler_upcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/main_progress_upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/main_upcoming_content_empty_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/empty_data"
+                android:contentDescription="@string/contentD_empty"/>
+
+            <TextView
+                style="@style/MovieTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_no_moview"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
